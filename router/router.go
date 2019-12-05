@@ -6,14 +6,14 @@ import (
 
 var (
 	UserRouter      IRouter
-	UserLockRouter  IRouter
+	UserLoginRouter IRouter
 	UserKeyRouter   IRouter
 	SignatureRouter IRouter
 )
 
 func init() {
 	UserRouter = &_UserRouter{}
-	UserLockRouter = &_UserLockRouter{}
+	UserLoginRouter = &_UserLoginRouter{}
 	UserKeyRouter = &_UserKeyRouter{}
 	SignatureRouter = &_SignatureRouter{}
 }

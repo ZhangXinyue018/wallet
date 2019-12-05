@@ -12,7 +12,7 @@ func main() {
 func routing() {
 	http.HandleFunc("/user/", router.UserRouter.GenRoutingFunc())
 
-	http.HandleFunc("/user-lock/", router.UserLockRouter.GenRoutingFunc())
+	http.HandleFunc("/user-login/", router.UserLoginRouter.GenRoutingFunc())
 
 	http.HandleFunc("/user-key", router.UserKeyRouter.GenRoutingFunc())
 
